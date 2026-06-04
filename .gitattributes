@@ -1,0 +1,19 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Shell scripts must keep LF line endings (they run on Linux)
+*.sh text eol=lf
+.husky/* text eol=lf
+
+# YAML files keep LF (GitHub Actions runs on Linux)
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Binary files - never modify
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary

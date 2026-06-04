@@ -1,0 +1,27 @@
+{
+  "name": "syrotech-sefm",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Enterprise file management system for Syrotech Networks",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upadhyayabhay67/syrotech-sefm.git"
+  },
+  "author": "Abhay Upadhyay",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky",
+    "lint:backend": "cd backend && npm run lint",
+    "test:backend": "cd backend && npm test"
+  },
+  "lint-staged": {
+    "backend/**/*.js": [
+      "cd backend && npx eslint --fix",
+      "cd backend && npx prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0"
+  }
+}

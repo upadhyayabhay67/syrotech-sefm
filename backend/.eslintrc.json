@@ -1,0 +1,13 @@
+{
+  "extends": ["airbnb-base"],
+  "env": {
+    "node": true,
+    "jest": true,
+    "es2022": true
+  },
+  "rules": {
+    "no-console": "warn",
+    "max-len": ["warn", { "code": 120 }],
+    "consistent-return": "off"
+  }
+}
